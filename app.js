@@ -10,16 +10,16 @@ for (let i = 1; i <= 100; i++)
 // Exercise 2 Section
 console.log("EXERCISE 2:\n==========\n");
 
-for (let i = 1; i <= 100; i++) {
+for (let i = 1; i <= 100; i++)
+{
     let result = "";
-
-    if (i % 3 == 0)
+    if (i % 3 === 0)
         result = "FIZZ";
-    if (i % 5 == 0)
+    if (i % 5 === 0)
         result += "BUZZ";
 
     if (result != "")
-        console.log("Number " + i + ": " + result);
+        console.log(`Number  ${i}: ${result}`);
 }
 
 // Exercise 3 Section
@@ -29,7 +29,7 @@ let counter = 0;
 while (counter <= 100)
 {
     if (counter % 2 != 0)
-        console.log("While loop: " + counter);
+        console.log(`While loop: ${counter}`);
 
     counter++;
 }
@@ -39,13 +39,13 @@ do
 {
     let result = "";
 
-    if (counter % 3 == 0)
+    if (counter % 3 === 0)
         result = "FIZZ";
-    if (counter % 5 == 0)
+    if (counter % 5 === 0)
         result += "BUZZ";
 
     if (result != "")
-        console.log("Do While loop - " + counter + ": " + result);
+        console.log(`Do While loop - ${counter}: ${result}`);
 
     counter++;
 
@@ -60,9 +60,9 @@ let foundVal = false;
 
 for (let i = 0; i <= n; i++)
 {
-    if (i == value)
+    if (i === value)
     {
-        console.log("Found value! - iter: " + i + " | val: " + value);
+        console.log(`Found value! - iter: ${i} | val: ${value}`);
         foundVal = true;
         break;
     }
@@ -82,15 +82,13 @@ let end = Math.round(Math.random() * (1000 - 100) + 100);
 for (let i = start; i <= end; i++)
 {
     let result = "";
-
-    if (i % fizzDivisor == 0)
+    if (i % fizzDivisor === 0)
         result = "FIZZ";
-    if (i % buzzDivisor == 0)
+    if (i % buzzDivisor === 0)
         result += "BUZZ";
 
     if (result != "")
-        console.log("Custom FizzBuzz - Number " + i + ": " + result);
+        console.log(`Custom FizzBuzz - Number ${i}: ${result}`);
 }
 
-console.log("fizzDivisor: " + fizzDivisor + " | buzzDivisor: " + buzzDivisor + "\n"
-    + "Start: " + start + " | End: " + end);
+console.log(`fizzDivisor: ${fizzDivisor} | buzzDivisor: ${buzzDivisor}\nStart: ${start} | End: ${end}`);
